@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.grid.container {
+    display:grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+
+    grid-template-columns: 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.headerNavFlex {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+
+}
+
+.logoFlex {
+    /*font-size: 3rem;*/
+    flex-grow: 2;
+    font-size: 3em;
+}
+
+.navListFlex {
+    flex-grow: 1;
+    font-size: 1.2em;
+}
