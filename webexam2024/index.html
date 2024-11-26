@@ -7,19 +7,47 @@
     <title>Page Title</title>
 </head>
 <body>
-    <div class="grid-container">
+    <div id="grid-container">
         <header>
-            <input type="search" placeholder="søk her">
+            <div class="searchBarFlexContainer">
+                <input class="searchBar" type="search" placeholder="søk her">
+                <img class="searchIcon" src="searchIcon.png" alt="searchIcon">
+            </div>
             <nav>
                 <ul class="headerNavFlex">
-                    <li class="navListFlex"><a href="index.html">Hjem</a></li>
-                    <li class="navListFlex"><a href="">Produkter</a></li>
+                    <li class="listFlex"><a href="index.html">Hjem</a></li>
+                    <li class="listFlex"><a href="">Produkter</a></li>
                     <li class="logoFlex"><a href="index.html">Logo</a></li>
-                    <li class="navListFlex"><a href="">Kategorier</a></li>
-                    <li class="navListFlex"><a href="">Kontakt oss</a></li>
+                    <li class="listFlex"><a href="">Kategorier</a></li>
+                    <li class="listFlex"><a href="">Kontakt oss</a></li>
+                </ul>
+                <ul class="headerNavIconFlex">
+                    <li class="listFlex"><a href=""><img src="userIcon.png" alt="usertIcon"></a></li>
+                    <li class="listFlex"><a href=""><img src="heartIcon.png" alt="heartIcon"></a></li>
+                    <li class="listFlex"><a href=""><img src="cartIcon.png" alt="cartIcon"></a></li>
                 </ul>
             </nav>
         </header>
+        <main>
+            <section class="banner">
+                <h2 class="alignTextRight">Neque porro quisquam est qui dolorem.</h2>
+                <article>
+                    <p class="alignTextRight">Consectetur faucibus placerat suscipit orci quis ultricies 
+                        curabitur sem. Feugiat tortor ut imperdiet faucibus euismod. 
+                    </p>
+                    <button>FÅ EN PRØVE PAKKE I DAG</button>
+                </article>
+            </section>
+            <section id="grid-container-products">
+                <h2 class="productHeader">Våre mest populære produkter</h2>
+                <p class="productHeader">Oppdag det beste av det beste</p>
+                <div>
+                    <button class="productButton">New Products</button>
+                    <button class="productButton">Special Price</button>
+                    <button class="productButton">Best Sellers</button>
+                </div>  
+            </section>
+        </main>
         <footer>
             Footer
         </footer>
