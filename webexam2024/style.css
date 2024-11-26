@@ -147,20 +147,66 @@ li a img {
 #grid-container-products {
     display:grid;
     grid-template-areas: "productHeader"
+                         "productUnderText"
                          "productButtons"
                          "prdoductArticles";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 50fr;
 }
 
 .productHeader {
     grid-area: productHeader;
     padding: 0px 50px 0px 50px;
+    font-size: 2em;
+    font-weight: 800;
 }
 
-.productButton {
+.productUnderText {
+    grid-area: productUnderText;
+    padding: 0px 50px 0px 50px;
+    font-size: 1.4em;
+}
+
+.buttonsFlexContainer {
     grid-area: productButtons;
     display: flex;
     flex-direction: row;
+    column-gap: 2rem;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+
+}
+
+.productButton {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #6e6e6e;
+    color: #6e6e6e;
+    height: 3.4em;
+    padding: 20px;
+}
+
+.productArticleFlexContainer {
+    grid-area: prdoductArticles;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+}
+
+.productImage img {
+    max-width: 100%;
+}
+
+.productImage figcaption {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.productArticleFlexContainer article p {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-left: 1.5em;
 }
