@@ -12,7 +12,7 @@
                          "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 0.1fr 3fr 0.1fr;
 }
 
 /* margin for the webpage */
@@ -144,6 +144,7 @@ li a img {
     border: none;
 }
 
+/* nested grid to align the contents of the product articles */
 #grid-container-products {
     display:grid;
     grid-template-areas: "productHeader"
@@ -152,22 +153,29 @@ li a img {
                          "prdoductArticles";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 50fr;
+    grid-template-rows: .5fr 0.5fr 1fr 50fr;
 }
 
+/* header of the product section with. Sets the content using this class to be placed in the header area of the grid*/
 .productHeader {
     grid-area: productHeader;
-    padding: 0px 50px 0px 50px;
+}
+
+/* aligns the text under the head text to be under it */
+.productUnderText {
+    grid-area: productUnderText;
+}
+
+.headText {
     font-size: 2em;
     font-weight: 800;
 }
 
-.productUnderText {
-    grid-area: productUnderText;
-    padding: 0px 50px 0px 50px;
+.underText {
     font-size: 1.4em;
 }
 
+/* aligns the buttons to be under the text */
 .buttonsFlexContainer {
     grid-area: productButtons;
     display: flex;
@@ -175,9 +183,9 @@ li a img {
     column-gap: 2rem;
     justify-content: space-evenly;
     flex-flow: wrap;
-
 }
 
+/* styling for the buttons in the flex container for the buttons */
 .productButton {
     font-size: 1.2em;
     font-weight: 600;
@@ -188,6 +196,7 @@ li a img {
     padding: 20px;
 }
 
+/* creates a flexbox container for the articles of the products */
 .productArticleFlexContainer {
     grid-area: prdoductArticles;
     display: flex;
@@ -195,18 +204,89 @@ li a img {
     column-gap: 2rem;
 }
 
+/* makes sure the image doesnt take too much space */
 .productImage img {
     max-width: 100%;
+    margin-top: 3em;
 }
 
+/* styling for the caption for the image */
 .productImage figcaption {
     font-size: 2em;
     font-weight: 700;
     margin-top: 1em;
 }
 
+/* remove margin around figure */
+.productArticleFlexContainer article figure  {
+    margin: 0px;
+}
+
+/* styling for the price under the caption */
 .productArticleFlexContainer article p {
     font-size: 1.6em;
     font-weight: 600;
-    margin-left: 1.5em;
+}
+
+/* Make flex box for category articles */
+.categoryFlexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+/* setting height for the category boxes and adding border */
+.categoryItem {
+    border: 2px solid #000;
+    min-height: 35em;
+}
+
+/* creating a class to scale the third category box becuse flex-grow doesnt seem to work on flex-direction column */
+.categoryItem2 {
+    border: 2px solid #000;
+    min-height: 55em;
+
+}
+
+/* centering horizontally and vertically the text inside the category boxes of 1, 2, 4, 5*/
+.categoryItem h2 {
+    text-align: center;
+    height: 100%;
+    margin-top: 10em;
+}
+
+/* making new class for the h2 tag inside the third category box to vertically center the text */
+.categoryItem2 h2 {
+    text-align: center;
+    height: 100%;
+    margin-top: 18em;
+}
+
+/* creating a column flex box for the reviews */
+.reviewsFlexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+/* adds a border to the reviews */
+.reviewsFlexItem {
+    border: 2px solid #ccc;
+}
+
+/* moving the image to fit more nicely inside the review article */
+.reviewsFlexItem figure {
+    margin-top: 2em;
+}
+
+/* aligning the text with the image */
+.reviewsFlexItem h3 {
+    padding-left: 2em;
+}
+
+/* aligning the text with the image */
+.reviewsFlexItem p {
+    padding-left: 2.4em;
 }
