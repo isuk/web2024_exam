@@ -1,0 +1,7 @@
+validate code:
+make sure the language is all in norwegian
+check the contrast and user friendliness
+check UU
+erklærings saken
+make sure the header and footer code is identical
+document the process
