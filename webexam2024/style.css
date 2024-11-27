@@ -1,7 +1,6 @@
 
 * {
     font-family: sans-serif;
-
 }
 
 /* grid container for the webpage */
@@ -191,7 +190,7 @@ li a img {
     font-size: 1.2em;
     font-weight: 600;
     background-color: #fff;
-    border: 2px solid #6e6e6e;
+    border: 2px solid #000;
     color: #6e6e6e;
     height: 3.4em;
     padding: 20px;
@@ -330,6 +329,9 @@ hr {
     margin-bottom: 0px;
 }
 
+.maxWidth150 {
+    max-width: 150px;
+}
 /* flex bow to align teh contact info in a column*/
 .contactInfoFlexContainer {
     display: flex;
