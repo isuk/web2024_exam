@@ -329,6 +329,10 @@ hr {
     margin-bottom: 0px;
 }
 
+.removeMarginTop {
+    margin-top: 0px;
+}
+
 .maxWidth150 {
     max-width: 150px;
 }
@@ -386,4 +390,36 @@ hr {
     padding: 1.5em;
     background-color: #595959;
     color: #fff;
+}
+
+.breadCrumbs {
+    font-size: 1.8em;
+}
+
+.merkenavn {
+    font-size: 1.4em;
+}
+
+.lignendeProdukterFlexBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    padding: 0em 2em 0em 2em;
+}
+
+.largeFontOverride {
+    font-size: 2.4em !important;
+    font-weight: 900;
+}
+
+.alignItemsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.detailsStyling {
+    list-style: none;
 }
