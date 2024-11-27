@@ -61,6 +61,7 @@ footer {
 /* Settings for the link text styling in the nav */
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 a:visited {
@@ -289,4 +290,41 @@ li a img {
 /* aligning the text with the image */
 .reviewsFlexItem p {
     padding-left: 2.4em;
+}
+
+/* styling for line seperator in the header */
+hr {
+    margin: 4em auto;
+    height: 2px;
+    background-color: #6e6e6e;
+    border: none;
+}
+
+/* font weight that is not very thick or very slim */
+.mediumBold {
+    font-weight: 800;
+}
+
+.lightBold {
+    font-weight: 500
+}
+
+.marginTop {
+    margin-top: 1.5em;
+}
+
+.removeMargin {
+    margin: 0px;
+}
+
+.contactInfoFlexContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    font-style: normal;
+}
+
+.iconSize {
+    width: 1.6em;
+    height: 1.6em;
 }
