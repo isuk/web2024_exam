@@ -1,4 +1,4 @@
-/* styling for the webpage */
+
 * {
     font-family: sans-serif;
 
@@ -309,13 +309,25 @@ hr {
     font-weight: 500
 }
 
+.largeFont {
+    font-size: 2em;
+}
+
 /* reusable class for different margins */
 .marginTop {
     margin-top: 1.5em;
 }
 
+.marginBottom {
+    margin-bottom: 1.5em;
+}
+
 .removeMargin {
     margin: 0px;
+}
+
+.removeMarginBottom {
+    margin-bottom: 0px;
 }
 
 /* flex bow to align teh contact info in a column*/
@@ -327,7 +339,7 @@ hr {
 }
 
 /* flex box to align the contact info and icons in a row */
-.contactInfoFlexContainer section {
+.contactInfoFlexContainer address {
     display: flex;
     flex-direction: row;
     column-gap: 1em;
@@ -339,4 +351,37 @@ hr {
     max-width: 1.6em;
     max-height: 1.6em;
     object-fit: contain;
+}
+
+.opplysningerFlexContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    height: 20em;
+}
+
+.opplysningerFlexItem {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #6e6e6e;
+    color: #6e6e6e;
+    height: 8em;
+    text-indent: 15px;
+}
+
+.betalningFlexItem {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #6e6e6e;
+    color: #6e6e6e;
+    height: 3em;
+    text-indent: 15px;
+}
+
+.lagreButton {
+    padding: 1.5em;
+    background-color: #595959;
+    color: #fff;
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kasse</title>
+</head>
+<body id="grid-container">
+        <header>
+        <div class="searchBarFlexContainer">
+            <input class="searchBar" type="search" placeholder="søk her">
+            <img class="searchIcon" src="searchIcon.png" alt="searchIcon">
+        </div>
+        <nav>
+            <ul class="headerNavFlex">
+                <li class="listFlex"><a href="index.html">Hjem</a></li>
+                <li class="listFlex"><a href="products.html">Produkter</a></li>
+                <li class="logoFlex"><a href="index.html">Logo</a></li>
+                <li class="listFlex"><a href="categories.html">Kategorier</a></li>
+                <li class="listFlex"><a href="">Kontakt oss</a></li>
+            </ul>
+            <ul class="headerNavIconFlex">
+                <li class="listFlex"><a href=""><img src="userIcon.png" alt="user icon"></a></li>
+                <li class="listFlex"><a href=""><img src="heartIcon.png" alt="heart icon"></a></li>
+                <li class="listFlex"><a href=""><img src="cartIcon.png" alt="cart icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1 class="mediumBold">Kasse</h1>
+    <h2 class="mediumBold largeFont marginTop">1. SHOPPINGBAGEN DIN</h2>
+    <section>
+        <div class="productArticleFlexContainer">
+            <article>
+                <figure class="productImage">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="product image">
+                    <figcaption>Product name</figcaption>
+                </figure>
+                <p class="removeMargin">Kr 1999</p>
+                <p class="removeMargin">Farge: beige</p>
+            </article>
+            <article>
+                <figure class="productImage">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="product image">
+                    <figcaption>Product name</figcaption>
+                </figure>
+                <p class="removeMargin">Kr 1999</p>
+                <p class="removeMargin">Farge: beige</p>
+            </article>
+            <article>
+                <figure class="productImage">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="product image">
+                    <figcaption>Product name</figcaption>
+                </figure>
+                <p class="removeMargin">Kr 1999</p>
+                <p class="removeMargin">Farge: beige</p>
+            </article>
+        </div>
+        <h2 class="mediumBold largeFont marginTop">2. DINE OPPLYSNINGER</h2>
+        <h3>Leveringsadresse</h3>
+        <form class="opplysningerFlexContainer">
+            <input class="opplysningerFlexItem" type="text" placeholder="Fornavn*">
+            <input class="opplysningerFlexItem" type="text" placeholder="Etternavn*">
+            <input class="opplysningerFlexItem" type="text" placeholder="Gateadresse*">
+            <input class="opplysningerFlexItem" type="text" placeholder="Postnummer*">
+            <input class="opplysningerFlexItem" type="text" placeholder="By*">
+        </form>
+        <button class="lagreButton marginTop marginBottom">Lagre</button><br>
+        <a>Avbryt</a>
+        <h2 class="mediumBold largeFont marginTop">3. LEVERING</h2>
+        <h3>LEVERINGSVALG</h3>
+        <form class="flexContainerLeveranse">
+            <input type="radio" id="ekspressHjemlevering" name="deliveryOption" value="ekspressHjemlevering">
+            <label for="ekspressHjemlevering">Ekspress Hjemlevering</label><br>
+            <input class="marginTop" type="radio" id="EkspressPakkeTilUtleveringssted" name="deliveryOption" value="EkspressPakkeTilUtleveringssted">
+            <label for="EkspressPakkeTilUtleveringssted">Ekspress Pakke Til Utleveringssted</label><br>
+            <input class="marginTop" type="radio" id="standardHjemlevering" name="deliveryOption" value="standardHjemlevering">
+            <label for="standardHjemlevering">Standard Hjemlevering</label><br>
+        </form>
+        <h2 class="mediumBold largeFont marginTop">4. BETALING</h2>
+        <h3>BETAL MED KORT</h3>
+        <form class="opplysningerFlexContainer">
+            <p class="removeMargin">Kortnummer</p>
+            <input class="betalningFlexItem" type="text" placeholder="342342****4435">
+            <p class="removeMargin">Utløpsdato</p>
+            <input class="betalningFlexItem" type="text" placeholder="mm/dd/yyyy">
+            <p class="removeMargin">CVC/CVV</p>
+            <input class="betalningFlexItem" type="text" placeholder="CVC/CVV">
+        </form>
+        <p class="removeMargin">Å betale inkl. mva.</p>
+        <p class="removeMargin">1 199 kr</p>
+        <button class="lagreButton marginTop marginBottom">Fullfør kjøp</button><br>
+        <p class="removeMargin">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+            Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger 
+            uriktige eller ufullstendige opplysninger.
+        </p>
+        <form>
+            <input class="marginTop" type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="nyhetsbrev">
+            <label for="nyhetsbrev">Ja Takk! Send nyhetsbrev til meg.</label><br>
+            <input type="checkbox" id="tekstmeldinger" name="tekstmeldinger" value="tekstmeldinger">
+            <label for="tekstmeldinger">Jeg ønsker å motta tekstmeldinger med tilbud of nyheter.</label><br>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <hr>
+        <h2 class="headText mediumBold">Logo</h2>
+        <p class="underText">Suspendisse ullamcorper eget ad praesent sodales maximus dolor.</p>
+        <section class="contactInfoFlexContainer">
+            <h2 class="headText mediumBold marginTop">Kontakt</h2>
+            <address>
+                <img class="iconSize" src="addressIcon.png" alt="address icon">
+                    <p class="underText lightBold removeMargin"><b>Adresse:</b> B R A Veien 4, 1757 Halden</p>
+            </address>
+            <address>
+                <img class="iconSize" src="phoneIcon.png" alt="phone icon">
+                    <p class="underText lightBold removeMargin"><b>Telefon:</b> <a href="tel:69608000">69 60 80 00</a></p>
+            </address>
+            <address>
+                <img class="iconSize" src="emailIcon.png" alt="email icon">
+                    <p class="underText lightBold removeMargin"><b>E-post:</b> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+            </address>
+            <address>
+                <img class="iconSize" src="clockIcon.png" alt="clock icon">
+                    <p class="underText lightBold removeMargin"><b>Åpningstider:</b> Stenger 15:00</p>
+            </address>
+        </section>
+        <h2 class="headText mediumBold marginTop">Snarveier</h2>
+        <address class="contactInfoFlexContainer">
+            <p class="underText removeMargin">Produkter</p>
+            <p class="underText removeMargin">Kategorier</p>
+            <p class="underText removeMargin">Kontakt Oss</p>
+        </address>
+        <h2 class="headText mediumBold marginTop removeMarginBottom">SOSIALE MEDIER</h2>
+        <address class="contactInfoFlexContainer">
+            <img class="iconSize marginTop" src="instagramIcon.png" alt="instagram icon">
+            <img class="iconSize" src="facebookIcon.png" alt="facebook icon">
+            <img class="iconSize" src="linkedinIcon.png" alt="linkedin icon">
+            <img class="iconSize" src="pinterestIcon.png" alt="pinterest icon">
+        </address>
+    </footer>
+</body>
