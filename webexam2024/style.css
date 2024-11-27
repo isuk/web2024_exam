@@ -300,7 +300,7 @@ hr {
     border: none;
 }
 
-/* font weight that is not very thick or very slim */
+/* classes for different weighted texts */
 .mediumBold {
     font-weight: 800;
 }
@@ -309,6 +309,7 @@ hr {
     font-weight: 500
 }
 
+/* reusable class for different margins */
 .marginTop {
     margin-top: 1.5em;
 }
@@ -317,6 +318,7 @@ hr {
     margin: 0px;
 }
 
+/* flex bow to align teh contact info in a column*/
 .contactInfoFlexContainer {
     display: flex;
     flex-direction: column;
@@ -324,7 +326,17 @@ hr {
     font-style: normal;
 }
 
+/* flex box to align the contact info and icons in a row */
+.contactInfoFlexContainer section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-items: center;
+}
+
+/* styling for the icons in the contact info */
 .iconSize {
-    width: 1.6em;
-    height: 1.6em;
+    max-width: 1.6em;
+    max-height: 1.6em;
+    object-fit: contain;
 }
