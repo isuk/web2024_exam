@@ -7,23 +7,23 @@
     <title>Forrside</title>
 </head>
 <body id="grid-container">
-        <header>
-        <div class="searchBarFlexContainer">
-            <input class="searchBar" type="search" placeholder="søk her">
-            <img class="searchIcon" src="searchIcon.png" alt="searchIcon">
-        </div>
+    <header>
+        <form class="searchBarFlexContainer">
+            <input class="searchBar" type="search" id="searchBar" name="searchBar" placeholder="søk her">
+            <img class="searchIcon" src="searchIcon.png" alt="search icon">
+        </form>
         <nav>
             <ul class="headerNavFlex">
                 <li class="listFlex"><a href="index.html">Hjem</a></li>
-                <li class="listFlex"><a href="products.html">Produkter</a></li>
+                <li class="listFlex"><a href="#grid-container-products">Produkter</a></li>
                 <li class="logoFlex"><a href="index.html">Logo</a></li>
-                <li class="listFlex"><a href="categories.html">Kategorier</a></li>
-                <li class="listFlex"><a href="">Kontakt oss</a></li>
+                <li class="listFlex"><a href="#categories">Kategorier</a></li>
+                <li class="listFlex"><a href="#footer">Kontakt oss</a></li>
             </ul>
             <ul class="headerNavIconFlex">
                 <li class="listFlex"><a href=""><img src="userIcon.png" alt="user icon"></a></li>
                 <li class="listFlex"><a href=""><img src="heartIcon.png" alt="heart icon"></a></li>
-                <li class="listFlex"><a href=""><img src="cartIcon.png" alt="cart icon"></a></li>
+                <li class="listFlex"><a href="kasse.html"><img src="cartIcon.png" alt="cart icon"></a></li>
             </ul>
         </nav>
     </header>
@@ -48,42 +48,42 @@
             <div class="productArticleFlexContainer">
                 <article>
                     <figure class="productImage">
-                        <img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde">
+                        <a href="produkt.html"><img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde"></a>
                         <figcaption>Produkt navn</figcaption>
                     </figure>
                     <p>Kr 1999</p>
                 </article>
                 <article>
                     <figure class="productImage">
-                        <img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde">
+                        <a href="produkt.html"><img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde"></a>
                         <figcaption>Produkt navn</figcaption>
                     </figure>
                     <p>Kr 1999</p>
                 </article>
                 <article>
                     <figure class="productImage">
-                        <img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde">
+                        <a href="produkt.html"><img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde"></a>
                         <figcaption>Produkt navn</figcaption>
                     </figure>
                     <p>Kr 1999</p>
                 </article>
                 <article>
                     <figure class="productImage">
-                        <img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde">
+                        <a href="produkt.html"><img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde"></a>
                         <figcaption>Produkt navn</figcaption>
                     </figure>
                     <p>Kr 1999</p>
                 </article>
                 <article>
                     <figure class="productImage">
-                        <img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde">
+                        <a href="produkt.html"><img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde"></a>
                         <figcaption>Produkt navn</figcaption>
                     </figure>
                     <p>Kr 1999</p>
                 </article>
                                     <article>
                     <figure class="productImage">
-                        <img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde">
+                        <a href="produkt.html"><img src="https://fastly.picsum.photos/id/187/1200/1200.jpg?hmac=5HU5dSQw1jyM7vHatXkf84ROV_qbFOoqgbVO6-5WIhk" alt="produkt bilde"></a>
                         <figcaption>Produkt navn</figcaption>
                     </figure>
                     <p>Kr 1999</p>
@@ -91,7 +91,7 @@
             </div>
         </section>
         <section>
-            <h2 class="headText">Våre mest populære kategorier</h2>
+            <h2 id="categories" class="headText">Våre mest populære kategorier</h2>
             <p class="underText">Oppdag det beste av det beste</p>
             <div class="categoryFlexContainer">
                 <article class="categoryItem">
@@ -116,7 +116,7 @@
             <div class="reviewsFlexContainer">
                 <article class="reviewsFlexItem">
                     <figure>
-                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="user profile picture">
+                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="bruker profil bilde">
                     </figure>
                     <h3>Rober Labrador</h3>
                     <p>Suspendisse ullamcorper eget ad praesent sodales maximus dolor. Volutpat blandit sollicitudin 
@@ -127,7 +127,7 @@
                 </article>
                 <article class="reviewsFlexItem">
                     <figure>
-                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="user profile picture">
+                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="bruker profil bilde">
                     </figure>
                     <h3>Rober Labrador</h3>
                     <p>Suspendisse ullamcorper eget ad praesent sodales maximus dolor. Volutpat blandit sollicitudin 
@@ -138,7 +138,7 @@
                 </article>
                 <article class="reviewsFlexItem">
                     <figure>
-                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="user profile picture">
+                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="bruker profil bilde">
                     </figure>
                     <h3>Rober Labrador</h3>
                     <p>Suspendisse ullamcorper eget ad praesent sodales maximus dolor. Volutpat blandit sollicitudin 
@@ -149,7 +149,7 @@
                 </article>
                 <article class="reviewsFlexItem">
                     <figure>
-                        <img src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="user profile picture">
+                        <img class="maxWidth150" src="https://fastly.picsum.photos/id/89/200/200.jpg?hmac=urh6JbqBxFLcQQEPfUQ23bUlEH7vg3qqqUOts86_LLI" alt="bruker profil bilde">
                     </figure>
                     <h3>Rober Labrador</h3>
                     <p>Suspendisse ullamcorper eget ad praesent sodales maximus dolor. Volutpat blandit sollicitudin 
@@ -161,26 +161,26 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <hr>
         <h2 class="headText mediumBold">Logo</h2>
         <p class="underText">Suspendisse ullamcorper eget ad praesent sodales maximus dolor.</p>
         <section class="contactInfoFlexContainer">
             <h2 class="headText mediumBold marginTop">Kontakt</h2>
             <address>
-                <img class="iconSize" src="addressIcon.png" alt="address icon">
+                <img class="iconSize" src="addressIcon.png" alt="address ikon">
                     <p class="underText lightBold removeMargin"><b>Adresse:</b> B R A Veien 4, 1757 Halden</p>
             </address>
             <address>
-                <img class="iconSize" src="phoneIcon.png" alt="phone icon">
+                <img class="iconSize" src="phoneIcon.png" alt="telefon ikon">
                     <p class="underText lightBold removeMargin"><b>Telefon:</b> <a href="tel:69608000">69 60 80 00</a></p>
             </address>
             <address>
-                <img class="iconSize" src="emailIcon.png" alt="email icon">
+                <img class="iconSize" src="emailIcon.png" alt="email ikon">
                     <p class="underText lightBold removeMargin"><b>E-post:</b> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
             </address>
             <address>
-                <img class="iconSize" src="clockIcon.png" alt="clock icon">
+                <img class="iconSize" src="clockIcon.png" alt="klokke ikon">
                     <p class="underText lightBold removeMargin"><b>Åpningstider:</b> Stenger 15:00</p>
             </address>
         </section>
@@ -189,13 +189,14 @@
             <p class="underText removeMargin">Produkter</p>
             <p class="underText removeMargin">Kategorier</p>
             <p class="underText removeMargin">Kontakt Oss</p>
+            <a class="underText removeMargin">Tilgjengelighetserklæring</a>
         </address>
         <h2 class="headText mediumBold marginTop removeMarginBottom">SOSIALE MEDIER</h2>
         <address class="contactInfoFlexContainer">
-            <img class="iconSize marginTop" src="instagramIcon.png" alt="instagram icon">
-            <img class="iconSize" src="facebookIcon.png" alt="facebook icon">
-            <img class="iconSize" src="linkedinIcon.png" alt="linkedin icon">
-            <img class="iconSize" src="pinterestIcon.png" alt="pinterest icon">
+            <img class="iconSize marginTop" src="instagramIcon.png" alt="instagram ikon">
+            <img class="iconSize" src="facebookIcon.png" alt="facebook ikon">
+            <img class="iconSize" src="linkedinIcon.png" alt="linkedin ikon">
+            <img class="iconSize" src="pinterestIcon.png" alt="pinterest ikon">
         </address>
     </footer>
 </body>

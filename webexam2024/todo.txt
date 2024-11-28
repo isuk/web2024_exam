@@ -1,5 +1,4 @@
-check the contrast and user friendliness
-check UU
+check UU 
 erklærings saken
-make sure the header and footer code is identical
+make sure the header and footer code is identical 2
 document the process
