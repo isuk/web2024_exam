@@ -439,3 +439,7 @@ hr {
 .detailsStyling {
     list-style: none;
 }
+
+.textColorBlueOverride {
+    color: #2727F0 !important;
+}

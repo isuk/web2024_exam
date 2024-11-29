@@ -63,11 +63,11 @@
             <input class="opplysningerFlexItem" type="text" id="fname" name="fname" placeholder="Fornavn*">
             <input class="opplysningerFlexItem" type="text" id="sname" name="sname" placeholder="Etternavn*">
             <input class="opplysningerFlexItem" type="text" id="adress" name="adress" placeholder="Gateadresse*">
-            <input class="opplysningerFlexItem" type="text" id="zip" name="zip" placeholder="Postnummer*">
+            <input class="opplysningerFlexItem" type="number" id="zip" name="zip" placeholder="Postnummer*">
             <input class="opplysningerFlexItem" type="text" id="city" name="city" placeholder="By*">
         </form>
         <button class="lagreButton marginTop marginBottom">Lagre</button><br>
-        <a><u>Avbryt</u></a>
+        <a href="index.html" class="textColorBlueOverride"><u>Avbryt</u></a>
         <h2 class="mediumBold largeFont marginTop">3. LEVERING</h2>
         <h3>LEVERINGSVALG</h3>
         <form class="flexContainerLeveranse">
@@ -82,11 +82,11 @@
         <h3>BETAL MED KORT</h3>
         <form class="opplysningerFlexContainer">
             <label class="removeMargin" for="cardNum">Kortnummer</label>
-            <input class="betalningFlexItem" type="text" id="cardNum" name="cardNum" placeholder="342342****4435">
+            <input class="betalningFlexItem" type="number" id="cardNum" name="cardNum" placeholder="342342****4435">
             <label class="removeMargin" for="cardName">Utløpsdato</label>
-            <input class="betalningFlexItem" type="text" id="cardDate" name="cardDate" placeholder="mm/dd/yyyy">
+            <input class="betalningFlexItem" type="month" id="cardDate" name="cardDate" placeholder="mm/dd/yyyy">
             <label class="removeMargin" for="cardCVC">CVC/CVV</label>
-            <input class="betalningFlexItem" type="text" id="cardCVC" name="cardCVC" placeholder="CVC/CVV">
+            <input class="betalningFlexItem" type="number" id="cardCVC" name="cardCVC" placeholder="CVC/CVV">
         </form>
         <p class="removeMargin">Å betale inkl. mva.</p>
         <p class="removeMargin">1 199 kr</p>
