@@ -1,4 +1,0 @@
-check UU 
-erklærings saken
-make sure the header and footer code is identical 2
-document the process
